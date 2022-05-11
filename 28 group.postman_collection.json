@@ -1,0 +1,347 @@
+{
+	"info": {
+		"_postman_id": "380a1a30-7306-4fed-b9d8-09b2feb1235b",
+		"name": "28 group",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "EP_1",
+			"event": [
+				{
+					"listen": "test",
+					"script": {
+						"exec": [
+							""
+						],
+						"type": "text/javascript"
+					}
+				}
+			],
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://162.55.220.72:5005/get_method?name=Vikrotyia&age=37",
+					"protocol": "http",
+					"host": [
+						"162",
+						"55",
+						"220",
+						"72"
+					],
+					"port": "5005",
+					"path": [
+						"get_method"
+					],
+					"query": [
+						{
+							"key": "name",
+							"value": "Vikrotyia"
+						},
+						{
+							"key": "age",
+							"value": "37"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "EP_2",
+			"event": [
+				{
+					"listen": "test",
+					"script": {
+						"exec": [
+							"let nn = 10\r",
+							"console.log(nn)\r",
+							"let resp_json = {\r",
+							"    \"age\": \"37\",\r",
+							"    \"family\": {\r",
+							"        \"children\": [\r",
+							"            [\r",
+							"                \"Alex\",\r",
+							"                24\r",
+							"            ],\r",
+							"            [\r",
+							"                \"Kate\",\r",
+							"                12\r",
+							"            ]\r",
+							"        ],\r",
+							"        \"u_salary_1_5_year\": 4000\r",
+							"    },\r",
+							"    \"name\": \"vika\",\r",
+							"    \"salary\": 1000\r",
+							"} \r",
+							"let test_arr = [1,2]\r",
+							"pm.test('test_1', function () {\r",
+							"    pm.expect(test_arr).to. deep.equal([1,2])\r",
+							"});\r",
+							"pm.test('test_2', function () {\r",
+							"    pm.expect(tt2).to.have.property('age')\r",
+							"});\r",
+							"\r",
+							"\r",
+							"\r",
+							"\r",
+							"pm.test(\"Status code is 200\", function () {\r",
+							"    pm.response.to.have.status(200);\r",
+							"});"
+						],
+						"type": "text/javascript"
+					}
+				}
+			],
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "formdata",
+					"formdata": [
+						{
+							"key": "name",
+							"value": "Viktoryia",
+							"type": "text"
+						},
+						{
+							"key": "age",
+							"value": "37",
+							"type": "text"
+						},
+						{
+							"key": "salary",
+							"value": "100500",
+							"type": "text"
+						},
+						{
+							"key": "",
+							"value": "",
+							"type": "text",
+							"disabled": true
+						}
+					]
+				},
+				"url": {
+					"raw": "http://162.55.220.72:5005/user_info_3",
+					"protocol": "http",
+					"host": [
+						"162",
+						"55",
+						"220",
+						"72"
+					],
+					"port": "5005",
+					"path": [
+						"user_info_3"
+					],
+					"query": [
+						{
+							"key": "name",
+							"value": "Viktoryia",
+							"disabled": true
+						},
+						{
+							"key": "age ",
+							"value": "30+",
+							"disabled": true
+						},
+						{
+							"key": "salary",
+							"value": "100500",
+							"disabled": true
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "EP_3",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://162.55.220.72:5005/object_info_1?name=Viktoryia&age=37&weight=53",
+					"protocol": "http",
+					"host": [
+						"162",
+						"55",
+						"220",
+						"72"
+					],
+					"port": "5005",
+					"path": [
+						"object_info_1"
+					],
+					"query": [
+						{
+							"key": "name",
+							"value": "Viktoryia"
+						},
+						{
+							"key": "age",
+							"value": "37"
+						},
+						{
+							"key": "weight",
+							"value": "53"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "EP_4",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://162.55.220.72:5005/object_info_2?name=Viktoryia&age=37&salary=100500",
+					"protocol": "http",
+					"host": [
+						"162",
+						"55",
+						"220",
+						"72"
+					],
+					"port": "5005",
+					"path": [
+						"object_info_2"
+					],
+					"query": [
+						{
+							"key": "name",
+							"value": "Viktoryia"
+						},
+						{
+							"key": "age",
+							"value": "37"
+						},
+						{
+							"key": "salary",
+							"value": "100500"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "EP_5",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://162.55.220.72:5005/object_info_3?name=Viktoryia&age=37&salary=100500",
+					"protocol": "http",
+					"host": [
+						"162",
+						"55",
+						"220",
+						"72"
+					],
+					"port": "5005",
+					"path": [
+						"object_info_3"
+					],
+					"query": [
+						{
+							"key": "name",
+							"value": "Viktoryia"
+						},
+						{
+							"key": "age",
+							"value": "37"
+						},
+						{
+							"key": "salary",
+							"value": "100500"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "EP_6",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://162.55.220.72:5005/object_info_4?name=Viktoryia&age=37&salary=100500",
+					"protocol": "http",
+					"host": [
+						"162",
+						"55",
+						"220",
+						"72"
+					],
+					"port": "5005",
+					"path": [
+						"object_info_4"
+					],
+					"query": [
+						{
+							"key": "name",
+							"value": "Viktoryia"
+						},
+						{
+							"key": "age",
+							"value": "37"
+						},
+						{
+							"key": "salary",
+							"value": "100500"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "EP_7",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "formdata",
+					"formdata": [
+						{
+							"key": "name",
+							"value": "Viktoryia",
+							"type": "text"
+						},
+						{
+							"key": "age",
+							"value": "37",
+							"type": "text"
+						},
+						{
+							"key": "salary",
+							"value": "100500",
+							"type": "text"
+						}
+					]
+				},
+				"url": {
+					"raw": "http://162.55.220.72:5005/user_info_2",
+					"protocol": "http",
+					"host": [
+						"162",
+						"55",
+						"220",
+						"72"
+					],
+					"port": "5005",
+					"path": [
+						"user_info_2"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
